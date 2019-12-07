@@ -16,12 +16,14 @@ struct AboutUsView: View {
     
     var body: some View {
         VStack {
-        Person(showDetail: $showDetails1, image: "Dimitri", text: "I am a senior iOS developer with more than 8 years of experience in building scalable, high quality iOS apps.")
+        Person(showDetail: $showDetails1, image: "Dimitri", text: "I am the frontend developer with more than 8 years of experience.Mob: +44 7509 783 548")
             
-            Person(showDetail: $showDetails2, image: "Lily", text:"Lily is the right side of the brain trust. She drives our team  to push every idea to the limit and then a little more just for good measure. Experience in creative development, she’s led strategic marketing, brand management and creative development")
+            Person(showDetail: $showDetails2, image: "Lily", text:"I am a creative development,led strategic marketing, brand management and creative development.  Mob: +44 7937 970 421")
             
-            Person(showDetail: $showDetails3, image: "Alpar", text: "I am the frontend developer at Rebeloper. I mainly use SwiftUI and Combine, but I am knowledgable in UIKit too. Laying out Views - part of the daily hustle!hhhhhhhhhh hhhh")
+            Person(showDetail: $showDetails3, image: "David", text: "I am developer  Mob: +38 067 852 55 55")
+           
         } .padding(.horizontal, 20)
+        
     }
 }
 
@@ -52,11 +54,11 @@ struct Person : View {
                     HStack {
                         Text(self.image)
                             
-                            .foregroundColor(Color.gray)
+                        .foregroundColor(Color.gray)
                             .fontWeight(.heavy)
-                        Button(action: {
+                       Button(action: {
                             self.showDetail.toggle()
-                        }) {
+                   }) {
                             Image(systemName: "chevron.down.circle")
                                 .font(.title)
                                 .rotationEffect(.degrees(self.showDetail ? 0: -180))
@@ -65,8 +67,8 @@ struct Person : View {
                     }.offset(y: self.showDetail ? 0 : geometry.size.height / 10)
                         .animation(.easeInOut(duration: 0.5))
                     Text(self.text)
-                        .opacity(self.showDetail ? 1 : 0)
-                        .animation(Animation.easeInOut(duration: 2).speed(3))
+                      .opacity(self.showDetail ? 1 : 0)
+                        .foregroundColor(.secondary) .animation(Animation.easeInOut(duration: 2).speed(3))
                 }.frame(width: geometry.size.width / 2)
             }
         }

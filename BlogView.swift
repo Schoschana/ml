@@ -1,7 +1,7 @@
 
 //
 
-import SwiftUI
+import SwiftUI 
 
 struct OurApproach: View {
     
@@ -11,22 +11,23 @@ struct OurApproach: View {
         VStack(spacing: 10) {
                   
             Button(action: { self.animation.toggle() }) {
-            Text("IT STRATEGY ")
-                .font(.largeTitle)
+            Text("CRM")
+                
                 .fontWeight(.bold)
-                .foregroundColor(Color.black)
+                .foregroundColor(Color.purple)
                 .shadow(color: .gray, radius: 10, x: 0, y: 10)
             }  
                 .offset(y: animation ? UIScreen.main.bounds.height / 2.5 : 0)
                 .animation(.easeInOut(duration: 2))
            
-            Text("Today, you need to ensure the consistent delivery of high-quality IT products and services for your enterprise workflow and your customers. You also need to implement new technologies to stay competitive and meet the demands of modern users. Our IT solutions consulting will help your strike the balance between these two objectives, ensuring they don’t conflict between one another.Our IT consulting advisors will conduct a deep analysis of how your business and employees use your existing enterprise software, as well as of your enterprise mobile strategy.")
+            Text("CRM that scales as you do Customer relationship management isn’t just for big businesses. Create stronger connections from day 1 with our Marketing CRM tools, and find everything you need to have relevant conversations with your people — whether you’re building a brand new audience or you have thousands of contacts already. Get a holistic view of your audience. Whether you’re starting from scratch with CRM or bringing an existing audience into ML, connecting your favorite tools and keeping all your contact data in ML helps you stay organized and improve your marketing.")
                 
                 .font(.body)
                 .foregroundColor(.gray)
                 .lineSpacing(10)
-                .lineLimit(200)
+                .lineLimit(300)
                 .opacity(animation ? 0 : 1)
+                  
                 
                 .animation(Animation.easeInOut(duration: 3))
         }

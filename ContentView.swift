@@ -3,7 +3,7 @@ import SwiftUI
 struct ContentView: View {
    
     init() {
-        UITabBar.appearance().backgroundColor = UIColor.red
+        UITabBar.appearance().backgroundColor = UIColor.purple
     }
     
     @State var selected = 3
@@ -13,8 +13,7 @@ struct ContentView: View {
             StoreView().tabItem({
                 Image(systemName: Constants.TabBarImageName.tabBar3)
                 .font(.title)
-                
-               // .scaledFont(name: "Georgia", size: 12)
+                //.scaledFont(name: "Georgia", size: 12)
                 Text("\(Constants.TabBarText.tabBar3)")
             }).tag(3)
             
@@ -23,6 +22,7 @@ struct ContentView: View {
                     .font(.title)
                 Text("\(Constants.TabBarText.tabBar0)")
             }).tag(0)
+            
             
             OurApproach().tabItem({
                 Image(systemName: Constants.TabBarImageName.tabBar2)
@@ -35,7 +35,7 @@ struct ContentView: View {
                     .font(.title)
                 Text("\(Constants.TabBarText.tabBar1)")
             }).tag(1)
-        }.accentColor(Color.blue)
+        }.accentColor(Color.purple)
     }
 }
 

@@ -15,7 +15,7 @@ struct ContentView2: View {
                 NavigationLink(destination: ListDetailView(item: item)) {
                     ListElementView(item: item)
                 }
-            }.navigationBarTitle(Text("Platforms & Services"))
+            }.navigationBarTitle(Text(" Services")).font(.system(size: 14))  .lineSpacing(10)
                 
                 
                 

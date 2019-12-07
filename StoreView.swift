@@ -12,13 +12,10 @@ struct StoreView: View {
     
     
     let posts : [Post] = [
-        .init(id: 0, username: "OUR IT CONSULTING SERVICES", text: "We offer IT consulting services that will help you improve your software architecture, create a tech-driven digital strategy, and improve operations by optimising your software portfolio. Our software engineers will finish your digital transformation journey through careful planning and effective execution of the outlined IT strategy.", text1: "Deo Consulting", imageName: "0909"),
-        .init(id: 1, username: "OUR IT CONSULTING PROCESS", text: "For more than 5 years now DEO has been helping organizations of different scale and structure to improve and modernise their IT strategies. Some of our IT experts have worked in the industry for over fifteen years. This has allowed us to craft an effective approach to IT consulting that enables us to deliver maximum benefit in the shortest time.", text1: "Deo Consulting",imageName: "9090"),
-        .init(id: 2, username: "ANALYSIS", text: "Our IT consulting advisors study your existing software solutions and the ways in which your employees use them, identifying problems in workflows and automation.",text1: "1 - Step  ",imageName: "123"),
-        .init(id: 3, username: "STRATEGY", text: "The advisors design a roadmap and strategy that will help your business leverage the latest technologies and de-clutter your software infrastructure. Then, they set software and employee KPIs.",text1: "2 - Step  ",imageName: "1234"),
-        .init(id: 4, username: "PERFORMANCE", text: "Impactful IT consulting services rely on collaboration between the client and the IT consulting company. Our experts will closely analyse your workflows, tracking the performance to discover the pain points. Our software engineers will then eliminate the impeding elements.",text1: "3 - Step.  " ,imageName: "12345"),
-        .init(id: 5, username: "IMPROVEMENTS", text: "After completing the initially set goals, our IT consulting advisors and software engineers recommend steps for future improvements, as well as assist with implementing them.",text1: "4 - Step.  " ,imageName: "123456")
-       
+        .init(id: 0, username: "OUR IT CONSULTING SERVICES FOR HOTEL", text: "Full disclosure: We are not an average Digital CONSULTING Agency. We claim a long-standing presence and high-touch expertise in the Hospitality niche Consulting, transforming our clients’ aspirations into success stories. We offer tailor-made, fully adjusted services, and integrated solutions to Hotels & Resorts.", text1: " BE ZEN. WE BUILD YOUR BRAND'S FUTURE", imageName: "face123"),
+        .init(id: 1, username: "NO THEORIES. PROVEN PROFITABLE RESULTS!!", text: "When you work with us, you don’t just hire any digital agency: You must know that with us, you get a life-time relationship with a friendly & reliable agency – We are here all the way with you in this journey!.", text1: "BE ZEN. WE BUILD YOUR BRAND'S FUTURE",imageName: "face123456"),
+        .init(id: 2, username: "ANALYSIS", text: "Our IT consulting advisors study your existing software solutions and the ways in which your employees use them, identifying problems in workflows and automation.",text1: "BE ZEN. WE BUILD YOUR BRAND'S FUTURE",imageName: "face1234567"),
+        
         
 ]
     
@@ -63,8 +60,10 @@ struct StoreView: View {
                 
                 
                     }
-            }.navigationBarTitle(Text("DEO  IT CONSULTING")).font(.system(size: 16))
-                
+            }.navigationBarTitle(Text("IT - Hotel Consulting"))
+                .font(.system(size: 14))
+              
+
         
                   
     }
@@ -75,7 +74,7 @@ struct StoreView: View {
 
 struct GroupDetailView: View {
     var body : some View{
-        Text("At DEO we believe that Distributed Ledger Technologies (DLTs) carry the potential to introduce a new level of transparency, automation, and efficiency in businesses and nonprofits.Most organizations find it challenging to understand and apply the full power of Blockchain and DLTs to get tangible business results. Our team is passionate about utilizing our technical capabilities, experience, and product mindset to help our clients effectively extract real business value by implementing blockchain and DLT across their organization. ").foregroundColor(Color.gray).padding(EdgeInsets(top: 0, leading: 60, bottom: 0, trailing: 60))
+        Text("At ML we believe that Distributed Ledger Technologies (DLTs) carry the potential to introduce a new level of transparency, automation, and efficiency in businesses and nonprofits.Most organizations find it challenging to understand and apply the full power of Blockchain and DLTs to get tangible business results. Our team is passionate about utilizing our technical capabilities, experience, and product mindset to help our clients effectively extract real business value by implementing blockchain and DLT across their organization. ").foregroundColor(Color.gray).padding(EdgeInsets(top: 0, leading: 60, bottom: 0, trailing: 60))
         .font(.system(size: 20))
     }
 }
@@ -92,7 +91,7 @@ struct GroupView: View {
 
 struct GroupDetailView2: View {
     var body : some View{
-        Text("A company with a strong focus on emerging technology, DEO started to explore the potential of Augmented Reality back in 2015. We think that the technology is the next step in the evolution of Architecture, Engineering, and Construction, as well as other industries.This change is challenging, but Intellectsoft is ready to contribute. As a result, our R&D efforts have called for the creation of a separate AR development studio.Having extensive experience in building enterprise solutions, some of DEO best engineers, designers, and analysts are now bringing AR to the biggest industries.").foregroundColor(Color.gray).padding(EdgeInsets(top: 0, leading: 60, bottom: 0, trailing: 60))
+        Text("A company with a strong focus on emerging technology, ML started to explore the potential of Augmented Reality back in 2015. We think that the technology is the next step in the evolution of Architecture, Engineering, and Construction, as well as other industries.This change is challenging, but Intellectsoft is ready to contribute. As a result, our R&D efforts have called for the creation of a separate AR development studio.Having extensive experience in building enterprise solutions, some of ML best engineers, designers, and analysts are now bringing AR to the biggest industries.").foregroundColor(Color.gray).padding(EdgeInsets(top: 0, leading: 60, bottom: 0, trailing: 60))
         .font(.system(size: 20))
     }
 }
@@ -170,7 +169,7 @@ struct PostView: View {
                 VStack(alignment: .leading, spacing: 4){
                     Text(post.username).font(.headline)
                     Text(post.text1).font(.subheadline)
-                    }.padding(.leading, 8)
+                    }.padding(.leading, 8).padding(.trailing , 10)
                
             }.padding(.leading,10).padding(.top, 10)
             VStack(alignment: .leading) {
@@ -179,14 +178,15 @@ struct PostView: View {
                 .font(.system(size: 15)) .font(.body)
                                      .foregroundColor(.gray)
                                      .lineSpacing(10)
-            }
+             }.padding(.leading, 10).padding(.trailing , 10)
             VStack() {
             Image(post.imageName)
            .resizable()
-                 .aspectRatio(contentMode: .fit)
-                .clipped()
-                .frame(width: 380)
-        }.padding(.leading, 0).padding(.trailing, 0)
+                // .aspectRatio(contentMode: .fit)
+               // .clipped()
+                .frame(width: 400
+                )
+            }.padding(.leading, -10).padding(.trailing , 0)
         }
     }
 }

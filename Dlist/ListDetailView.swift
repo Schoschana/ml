@@ -27,9 +27,6 @@ struct ListDetailView: View {
                         .fontWeight(.bold)
                 }.frame(minWidth: 0, maxWidth: .infinity)
                 Image(item.image)
-                    .resizable()
-                    .renderingMode(.original)
-                    .aspectRatio(contentMode: .fit)
                 
                 Text(item.text)
                     .foregroundColor(Color.gray)
