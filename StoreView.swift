@@ -12,9 +12,9 @@ struct StoreView: View {
     
     
     let posts : [Post] = [
-        .init(id: 0, username: "OUR IT CONSULTING SERVICES FOR HOTEL", text: "Full disclosure: We are not an average Digital CONSULTING Agency. We claim a long-standing presence and high-touch expertise in the Hospitality niche Consulting, transforming our clients’ aspirations into success stories. We offer tailor-made, fully adjusted services, and integrated solutions to Hotels & Resorts.", text1: " BE ZEN. WE BUILD YOUR BRAND'S FUTURE", imageName: "face123"),
-        .init(id: 1, username: "NO THEORIES. PROVEN PROFITABLE RESULTS!!", text: "When you work with us, you don’t just hire any digital agency: You must know that with us, you get a life-time relationship with a friendly & reliable agency – We are here all the way with you in this journey!.", text1: "BE ZEN. WE BUILD YOUR BRAND'S FUTURE",imageName: "face123456"),
-        .init(id: 2, username: "ANALYSIS", text: "Our IT consulting advisors study your existing software solutions and the ways in which your employees use them, identifying problems in workflows and automation.",text1: "BE ZEN. WE BUILD YOUR BRAND'S FUTURE",imageName: "face1234567"),
+        .init(id: 0, username: "IT CONSULTING SERVICES", text: "Use the expertise and deep tech background of the best minds at ML to create a comprehensive IT strategy for a digital and technological transformation of your organization that goes in line with your business objectives. Our strategic IT consulting will help you automate and digitalise operations, optimise the software portfolio, and implement the latest technologies.", text1: " BE ZEN. WE BUILD YOUR BRAND'S FUTURE", imageName: "face123"),
+        .init(id: 1, username: "IT STRATEGY CONSULTING & NEW TECH", text: "Today, you need to ensure the consistent delivery of high-quality IT products and services for your enterprise workflow and your customers. You also need to implement new technologies to stay competitive and meet the demands of modern users. Our IT solutions consulting will help your strike the balance between these two objectives, ensuring they don’t conflict between one another.", text1: "BE ZEN. WE BUILD YOUR BRAND'S FUTURE",imageName: "face123456"),
+        .init(id: 2, username: "SOFTWARE PORTFOLIO CONSULTING", text: "Our IT consulting advisors will conduct a deep analysis of how your business and employees use your existing enterprise software, as well as of your enterprise mobile strategy. Then, they will provide suggestions for the required changes, new developments, and integration of third-party solutions to remove the existing roadblocks.",text1: "BE ZEN. WE BUILD YOUR BRAND'S FUTURE",imageName: "face1234567"),
         
         
 ]
@@ -60,7 +60,7 @@ struct StoreView: View {
                 
                 
                     }
-            }.navigationBarTitle(Text("IT - Hotel Consulting"))
+            }.navigationBarTitle(Text("IT CONSULTING SERVICES"))
                 .font(.system(size: 14))
               
 

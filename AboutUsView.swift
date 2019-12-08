@@ -16,11 +16,11 @@ struct AboutUsView: View {
     
     var body: some View {
         VStack {
-        Person(showDetail: $showDetails1, image: "Dimitri", text: "I am the frontend developer with more than 8 years of experience.Mob: +44 7509 783 548")
+        Person(showDetail: $showDetails1, image: "Dimitri", text: "I am the frontend developer with more than 8 years of experience.\nMob: +44 7509 783 548")
             
-            Person(showDetail: $showDetails2, image: "Lily", text:"I am a creative development,led strategic marketing, brand management and creative development.  Mob: +44 7937 970 421")
+            Person(showDetail: $showDetails2, image: "Lily", text:"I am a creative development,led strategic marketing, brand management and creative development.\nMob: +44 7937 970 421")
             
-            Person(showDetail: $showDetails3, image: "David", text: "I am developer  Mob: +38 067 852 55 55")
+            Person(showDetail: $showDetails3, image: "David", text: "Online marketing specialist and developer.\nMob: +38 067 852 55 55")
            
         } .padding(.horizontal, 20)
         
